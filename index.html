@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
+
 <html>
   <head>
     <meta charset="UTF-8">
@@ -95,6 +92,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Navbar Right Menu -->
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
+
+                          	<li>
+                          			<a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#DonateModal">Load Account</a>
+                          	</li>
 
             	<li>
             		<a href="https://ianjravin.github.io/zaka/"><i class="glyphicon glyphicon-home myicon-right"></i> View site</a>
@@ -194,10 +195,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             	<a href="payments.html"><i class="fa fa-credit-card"></i> <span>Payment Settings</span></a>
             </li><!-- ./Links -->
 
-            <!-- Links -->
-           <!-- <li >
-            	<a href="http://fundme.miguelvasquez.net/panel/admin/messages"><i class="fa fa-envelope"></i> <span>Messages</span></a>
-            </li><!-- ./Links -->
+
+           <li >
+            	<a href="messages.html"><i class="fa fa-envelope"></i> <span>Messages</span></a>
+            </li>
 
           </ul><!-- /.sidebar-menu -->
         </section>
@@ -575,9 +576,40 @@ new Morris.Area({
 });// <------------ MORRIS
   </script>
 
-    <!-- Optionally, you can add Slimscroll and FastClick plugins.
-          Both of these plugins are recommended to enhance the
-          user experience. Slimscroll is required when using the
-          fixed layout. -->
+  <div class="modal fade" id="DonateModal" tabindex="-1" role="dialog" data-backdrop="static">
+    	<div class="modal-dialog" role="document">
+      	<div class="modal-content">
+        		<div class="modal-header">
+          		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          		<div class="row">
+
+
+                      <div class="col-md-6 col-sm-6 donate-amount-option">
+                          <h4>Amount</h4>
+                          <div class="input-group">
+                              <span >Ksh</span>
+                              <input type="number" class="form-control">
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 donate-amount-option">
+                          <h4>Enter Mobile Number</h4>
+                          <div class="input-group">
+                              <span class="input-group-addon" id="basic-addon1">+254</span>
+                              <input type="number" class="form-control">
+                          </div>
+                      </div>
+                 	</div>
+
+        		</div>
+
+        		<div class="modal-footer text-align-center">
+          		<button type="button" class="btn btn-primary">Load Account</button>
+                  <div class="spacer-20"></div>
+
+        		</div>
+      	</div>
+    	</div>
+  </div>
+
   </body>
 </html>
